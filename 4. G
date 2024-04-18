@@ -1,0 +1,32 @@
+Algoritmo sin_titulo
+	// Definir las opciones del juego
+    Definir opciones Como Cadena
+    opciones <- "piedra papel tijeras"
+    
+    // Generar una elección aleatoria para el programa
+    e <- Aleatorio(1, 3)
+    eleccionPrograma <- SubCadena(opciones, (e - 1) * 7 + 1, 7)
+    
+    // Solicitar al usuario que ingrese su elección
+    Escribir "Elige piedra, papel o tijeras:"
+    Leer eleccionUsuario
+    
+    // Convertir la elección del usuario a minúsculas para facilitar la comparación
+    eleccionUsuario <- Minusculas(eleccionUsuario)
+    
+    // Verificar si la elección del usuario es válida
+    Si eleccionUsuario = "piedra" O eleccionUsuario = "papel" O eleccionUsuario = "tijeras" Entonces
+        // Determinar quién gana la partida
+        Si eleccionUsuario = eleccionPrograma Entonces
+            Escribir "¡Es un empate!"
+        Sino
+            Si (eleccionUsuario = "piedra" Y eleccionPrograma = "tijeras") O (eleccionUsuario = "papel" Y eleccionPrograma = "piedra") O (eleccionUsuario = "tijeras" Y eleccionPrograma = "papel") Entonces
+                Escribir "¡Felicidades! Has ganado."
+            Sino
+                Escribir "¡Lo siento! Has perdido."
+            FinSi
+        FinSi
+    Sino
+        Escribir "La elección ingresada no es válida. Por favor, elige piedra, papel o tijeras."
+    FinSi
+FinAlgoritmo

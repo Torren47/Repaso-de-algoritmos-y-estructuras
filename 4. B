@@ -1,0 +1,27 @@
+Algoritmo EncontrarMaximo
+    // Definir variables
+    Definir tamaño, máximo, i Como Entero
+    Definir arreglo Como Entero
+    
+    // Solicitar al usuario el tamaño del arreglo
+    Escribir "Ingrese el tamaño del arreglo:"
+    Leer tamaño
+    
+    // Leer los elementos del arreglo
+    Dimension arreglo[tamaño]
+    Para i <- 1 Hasta tamaño Hacer
+        Escribir "Ingrese el elemento ", i, " del arreglo:"
+        Leer arreglo[i]
+    FinPara
+    
+    // Encontrar el máximo del arreglo
+    máximo <- arreglo[1] // Asigna el primer elemento del arreglo como el máximo inicialmente
+    Para i <- 2 Hasta tamaño Hacer
+        Si arreglo[i] > máximo Entonces
+            máximo <- arreglo[i] // Actualiza el máximo si el elemento actual es mayor
+        FinSi
+    FinPara
+    
+    // Mostrar el máximo
+    Escribir "El máximo elemento del arreglo es: ", máximo
+FinAlgoritmo

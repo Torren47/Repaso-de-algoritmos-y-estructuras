@@ -1,0 +1,26 @@
+Algoritmo sin_titulo
+	// Declaración de variables
+
+	definir i, n, suma, numeros Como Entero
+	// Leer la cantidad de elementos del arreglo
+	Escribir "Ingrese la cantidad de números: "
+	Leer n
+	
+	// Leer los elementos del arreglo
+	Para i = 1 Hasta n
+		Escribir "Ingrese el número ", i, ": "
+		Leer numeros
+		
+	FinPara
+	
+	// Inicializar la suma a 0
+	suma = 0
+	
+	// Sumar cada elemento del arreglo
+	Para i = 1 Hasta n
+		suma = suma + numeros 
+	FinPara
+	
+	// Mostrar la suma total
+	Escribir "La suma de todos los números es: ", suma
+FinAlgoritmo

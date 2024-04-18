@@ -1,0 +1,26 @@
+Algoritmo sin_titulo
+	// Generar un número aleatorio entre 1 y 100
+    numeroAleatorio <- Aleatorio(1, 100)
+    
+    // Inicializar la variable para almacenar el número ingresado por el usuario
+    numeroIngresado <- 0
+    
+    // Mientras el número ingresado por el usuario sea diferente al número aleatorio
+    Mientras numeroIngresado <> numeroAleatorio Hacer
+        // Solicitar al usuario que ingrese un número
+        Escribir "Adivina el número (entre 1 y 100):"
+        Leer numeroIngresado
+        
+        // Comparar el número ingresado con el número aleatorio y dar pistas al usuario
+        Si numeroIngresado < numeroAleatorio Entonces
+            Escribir "El número ingresado es menor que el número secreto."
+        Sino
+            Si numeroIngresado > numeroAleatorio Entonces
+                Escribir "El número ingresado es mayor que el número secreto."
+            FinSi
+        FinSi
+    FinMientras
+    
+    // Mostrar mensaje de felicitaciones al usuario por adivinar el número
+    Escribir "¡Felicidades! Has adivinado el número secreto."
+FinAlgoritmo

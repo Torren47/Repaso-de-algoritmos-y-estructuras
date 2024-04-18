@@ -1,0 +1,15 @@
+Algoritmo sin_titulo
+	definir numero Como Real
+	escribir "ingresa un numero"
+	leer numero
+	Si numero == 0 Entonces
+		escribir "el numero ", numero, " es neutro "
+	SiNo
+		si numero >0 Entonces
+			escribir "el numero es positivo"
+		SiNo
+			escribir "el numero es negativo"
+		FinSi
+	Fin Si
+FinAlgoritmo
+

@@ -1,0 +1,31 @@
+Algoritmo sin_titulo
+	// Definir el tamaño del arreglo
+    Dimension arreglo[10]
+	
+    // Generar números aleatorios y llenar el arreglo
+    Para i <- 1 Hasta 10 Hacer
+        arreglo[i] <- Aleatorio(0, 9)
+    FinPara
+	
+    // Mostrar el arreglo por unos segundos
+    Escribir "Memoriza estos números:"
+    Para i <- 1 Hasta 10 Hacer
+        Escribir arreglo[i]
+    FinPara
+    Esperar 3 Segundos // Esperar 3 segundos (3000 milisegundos)
+    LimpiarPantalla // Ocultar los números
+	
+    // Pedir al usuario que ingrese los números en el mismo orden
+    Escribir "Ingresa los números en el mismo orden:"
+    Para i <- 1 Hasta 10 Hacer
+        Escribir "Número ", i, ":"
+        Leer numeroIngresado
+        // Verificar si el número ingresado coincide con el número en el arreglo
+        Si numeroIngresado <> arreglo[i] Entonces
+            Escribir "¡Has perdido! Los números no coinciden."
+        FinSi
+    FinPara
+	
+    // Si el usuario llega aquí, ha ingresado todos los números correctamente
+    Escribir "¡Felicidades! Has ganado."
+FinAlgoritmo

@@ -1,0 +1,25 @@
+Algoritmo sin_titulo
+	// Definir variables
+    Definir tamaño, suma, i Como Entero
+    Definir arreglo Como Entero
+    Definir media Como Real
+    
+    // Solicitar al usuario el tamaño del arreglo
+    Escribir "Ingrese el tamaño del arreglo:"
+    Leer tamaño
+    
+    // Leer los elementos del arreglo
+    Dimension arreglo[tamaño]
+    suma <- 0
+    Para i <- 1 Hasta tamaño Hacer
+        Escribir "Ingrese el elemento ", i, " del arreglo:"
+        Leer arreglo[i]
+        suma <- suma + arreglo[i] // Sumar cada elemento para calcular la suma total
+    FinPara
+    
+    // Calcular la media
+    media <- suma / tamaño
+    
+    // Mostrar la media
+    Escribir "La media de los elementos del arreglo es: ", media
+FinAlgoritmo

@@ -1,0 +1,23 @@
+Algoritmo sin_titulo
+	// Inicializar el producto a 1
+	producto = 1
+	
+	// Bucle para leer números y calcular el producto
+	Mientras (numero >= 0)
+		// Leer un número entero
+		Escribir("Ingrese un número entero (negativo para finalizar): ")
+		Leer numero
+		
+		// Si el número es positivo, multiplicarlo por el producto actual
+		Si (numero > 0)
+			producto = producto * numero
+		FinSi
+	FinMientras
+	
+	// Mostrar el producto final
+	Si (producto > 1)
+		Escribir "El producto de todos los números ingresados es: ", producto
+	Sino
+		Escribir("No se ha ingresado ningún número positivo.")
+FinSi
+FinAlgoritmo

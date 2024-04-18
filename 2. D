@@ -1,0 +1,11 @@
+Algoritmo sin_titulo
+	escribir "ingrese una palabra"
+	leer palabra
+	tamañodepalabra= longitud (palabra)
+	posicion=1
+	Repetir
+		letra= Subcadena(palabra,posicion,posicion)
+		escribir letra
+		posicion= posicion +1
+	Hasta Que posicion > tamañodepalabra
+FinAlgoritmo

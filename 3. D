@@ -1,0 +1,40 @@
+Algoritmo sin_titulo
+	// Declaración de variables
+	definir  distanciaCarrera, metrosCorredor1, metrosCorredor2 como entero
+	definir velocidadCorredor1, velocidadCorredor2 Como Real
+	
+	// Definir la distancia de la carrera
+	distanciaCarrera = 100
+	
+	// Inicializar variables a 0 (including velocities)
+	metrosCorredor1 = 0
+	metrosCorredor2 = 0
+	tiempoCarrera = 0
+	velocidadCorredor1 = 8  // Ejemplo: velocidad del Corredor 1 en metros por segundo
+	velocidadCorredor2 = 100 // Ejemplo: velocidad del Corredor 2 en metros por segundo
+	
+	// Bucle para simular la carrera
+	Mientras (tiempoCarrera <= 1)
+		// Generar metros aleatorios para cada corredor
+		metrosCorredor1 = Aleatorio(1, 10)
+		metrosCorredor2 = Aleatorio(1, 10)
+		
+		// Sumar metros a la distancia total recorrida por cada corredor
+		metrosCorredor1 = metrosCorredor1 + metrosCorredor1
+		metrosCorredor2 = metrosCorredor2 + metrosCorredor2
+		
+		// Incrementar el tiempo de carrera en 0.1 segundos
+		tiempoCarrera = tiempoCarrera + 0.1
+	FinMientras
+	
+	// Calcular el tiempo de cada corredor
+	tiempoCorredor1 = tiempoCarrera / velocidadCorredor1
+	tiempoCorredor2 = tiempoCarrera / velocidadCorredor2
+	
+	// Mostrar el ganador
+	Si (tiempoCorredor1 < tiempoCorredor2)
+		Escribir "El ganador es el Corredor 1 con un tiempo de ", tiempoCorredor1, " segundos"
+	Sino
+		Escribir "El ganador es el Corredor 2 con un tiempo de ", tiempoCorredor2, " segundos"
+	FinSi
+FinAlgoritmo

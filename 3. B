@@ -1,0 +1,27 @@
+Algoritmo sin_titulo
+	// Declaración de variables
+	definir cadena, letra como Cadena 
+	definir i, contador como Entero 
+	
+	// Lectura de la cadena
+	Leer cadena
+	
+	// Leer la letra a buscar
+	Leer letra
+	
+	// Inicializar el contador
+	contador = 0
+	
+	// Recorrer la cadena caracter por caracter
+	Para i = 1 Hasta Longitud(cadena) Hacer
+		// Si el caracter actual es igual a la letra, aumentar el contador
+		Si Subcadena(cadena, i, 1) == letra Entonces
+			contador = contador + 1
+		FinSi
+	FinPara
+	
+	// Mostrar el número de apariciones
+	Escribir "La letra ", letra, " aparece ", contador, " veces en la cadena."
+
+FinAlgoritmo
+

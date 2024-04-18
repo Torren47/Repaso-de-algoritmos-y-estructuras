@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+	escribir "ingrese su edad"
+	leer edad
+	Si edad >= 18 Entonces
+		Escribir "Es mayor"
+	SiNo
+		Escribir "es menor"
+	Fin Si
+FinAlgoritmo
+

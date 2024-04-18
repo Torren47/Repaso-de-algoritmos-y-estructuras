@@ -1,0 +1,14 @@
+Algoritmo sin_titulo
+	definir a,b Como Entero
+	escribir "ingresa 2 numeros"
+	leer a,b
+	Si a == b Entonces
+		escribir "los numeros son iguales"
+	SiNo
+		Si a > b Entonces
+			escribir "El numero " ,a, " es mayor"
+		SiNo
+			escribir "El numero" ,b, " es mayor"
+		Fin Si
+	Fin Si
+FinAlgoritmo

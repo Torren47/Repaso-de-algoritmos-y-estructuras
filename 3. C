@@ -1,0 +1,22 @@
+Algoritmo sin_titulo
+	// Declaración de variables
+	definir numero, suma Como Entero
+	// Inicialización de la resta
+	// Inicialización de la suma
+	suma = 0
+	
+	// Bucle para leer y sumar números
+	Mientras numero >= 0
+		// Leer un número
+		Escribir("Ingrese un número entero positivo (o un número negativo para terminar): ")
+		Leer numero
+		
+		// Si el número es positivo, sumarlo
+		Si (numero > 0)
+			suma = suma + numero
+		FinSi
+	FinMientras
+	
+	// Mostrar la suma total
+	Escribir"La suma total de los números ingresados es: ", suma
+FinAlgoritmo

@@ -1,0 +1,27 @@
+Algoritmo sin_titulo
+	// Definir variables
+    Definir tamaño, mínimo, i Como Entero
+    Definir arreglo Como Entero
+    
+    // Solicitar al usuario el tamaño del arreglo
+    Escribir "Ingrese el tamaño del arreglo:"
+    Leer tamaño
+    
+    // Leer los elementos del arreglo
+    Dimension arreglo[tamaño]
+    Para i <- 1 Hasta tamaño Hacer
+        Escribir "Ingrese el elemento ", i, " del arreglo:"
+        Leer arreglo[i]
+    FinPara
+    
+    // Encontrar el mínimo del arreglo
+    mínimo <- arreglo[1] // Asigna el primer elemento del arreglo como el mínimo inicialmente
+    Para i <- 2 Hasta tamaño Hacer
+        Si arreglo[i] < mínimo Entonces
+            mínimo <- arreglo[i] // Actualiza el mínimo si el elemento actual es menor
+        FinSi
+    FinPara
+    
+    // Mostrar el mínimo
+    Escribir "El mínimo elemento del arreglo es: ", mínimo
+FinAlgoritmo
